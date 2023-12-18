@@ -25,6 +25,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         self.setCustomDesign()
         self.setMapLocation(lat: 28.394857,
                             long: 84.124008)
+        self.setRateStars(rate: 5)
     }
     
     private func setCustomDesign() {
@@ -42,6 +43,21 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         let region = MKCoordinateRegion(center: initialLocation, span: span)
         self.mapView.setRegion(region, animated: true)
         self.mapView.delegate = self
+    }
+    
+    private func setRateStars(rate: Int) {
+        var lastRightAnchor = self.rateView.rightAnchor
+        for _ in 0..<rate {
+            let starView = UIImageView(image: UIImage(systemName: "star.fill"))
+            self.rateView.addSubview(starView)
+            
+            starView.translatesAutoresizingMaskIntoConstraints = false
+            starView.widthAnchor.constraint(equalToConstant: 19).isActive = true
+            starView.heightAnchor.constraint(equalToConstant: 19).isActive = true
+            starView.centerYAnchor.constraint(equalTo: self.rateView.centerYAnchor).isActive = true
+            starView.rightAnchor.constraint(equalTo: lastRightAnchor).isActive = true
+            lastRightAnchor = starView.leftAnchor
+        }
     }
     
     @IBAction func showMap(_ sender: Any) {

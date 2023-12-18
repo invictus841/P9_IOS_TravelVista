@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		424C31BB2B30919400279238 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C31BA2B30919400279238 /* CustomCell.swift */; };
+		424C31BD2B30955E00279238 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C31BC2B30955E00279238 /* DetailViewController.swift */; };
 		42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B90C122B2A055B00779364 /* AppDelegate.swift */; };
 		42B90C152B2A055B00779364 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B90C142B2A055B00779364 /* SceneDelegate.swift */; };
 		42B90C172B2A055B00779364 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B90C162B2A055B00779364 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		424C31BA2B30919400279238 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		424C31BC2B30955E00279238 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		42B90C0F2B2A055B00779364 /* TravelVista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelVista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B90C122B2A055B00779364 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B90C142B2A055B00779364 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		424C31BE2B30956400279238 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				424C31BC2B30955E00279238 /* DetailViewController.swift */,
+				42B90C162B2A055B00779364 /* ViewController.swift */,
+				424C31BA2B30919400279238 /* CustomCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		42B90C062B2A055A00779364 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +70,13 @@
 		42B90C112B2A055B00779364 /* TravelVista */ = {
 			isa = PBXGroup;
 			children = (
+				424C31BE2B30956400279238 /* Views */,
 				42B90C122B2A055B00779364 /* AppDelegate.swift */,
 				42B90C142B2A055B00779364 /* SceneDelegate.swift */,
-				42B90C162B2A055B00779364 /* ViewController.swift */,
 				42B90C182B2A055B00779364 /* Main.storyboard */,
 				42B90C1B2B2A056000779364 /* Assets.xcassets */,
 				42B90C1D2B2A056000779364 /* LaunchScreen.storyboard */,
 				42B90C202B2A056000779364 /* Info.plist */,
-				424C31BA2B30919400279238 /* CustomCell.swift */,
 			);
 			path = TravelVista;
 			sourceTree = "<group>";
@@ -143,6 +154,7 @@
 			files = (
 				42B90C172B2A055B00779364 /* ViewController.swift in Sources */,
 				42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */,
+				424C31BD2B30955E00279238 /* DetailViewController.swift in Sources */,
 				424C31BB2B30919400279238 /* CustomCell.swift in Sources */,
 				42B90C152B2A055B00779364 /* SceneDelegate.swift in Sources */,
 			);

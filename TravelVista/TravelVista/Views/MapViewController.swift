@@ -17,9 +17,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if (coordinates != nil) && (capitalName != nil) {
-            self.setMapLocation()
-            setMapPins()
+        if let coordinates = self.coordinates,
+           let capitalName = self.capitalName {
+            self.setMapLocation(coordinates: coordinates)
+            self.setMapPins(coordinates: coordinates, capitalName: capitalName)
         }
     }
     
@@ -28,17 +29,17 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         self.coordinates = CLLocationCoordinate2D(latitude: lat, longitude: long)
     }
     
-    private func setMapLocation() {
-        let initialLocation = self.coordinates!
+    private func setMapLocation(coordinates: CLLocationCoordinate2D) {
+        let initialLocation = coordinates
         let span = MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)
         let region = MKCoordinateRegion(center: initialLocation, span: span)
         self.mapView.setRegion(region, animated: true)
         self.mapView.delegate = self
     }
     
-    private func setMapPins() {
+    private func setMapPins(coordinates: CLLocationCoordinate2D, capitalName: String) {
         let pin = MKPointAnnotation()
-        pin.coordinate = self.coordinates!
+        pin.coordinate = coordinates
         pin.title = capitalName
         mapView.addAnnotation(pin)
     }

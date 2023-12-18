@@ -15,6 +15,7 @@ class CustomCell: UITableViewCell {
     
     var country: Country?
     
+    // Fonction qui permet de configurer la cellule en fonction d'un Country
     func setUpCell(country: Country){
         self.countryImageView.layer.cornerRadius = self.countryImageView.frame.size.width / 2
         

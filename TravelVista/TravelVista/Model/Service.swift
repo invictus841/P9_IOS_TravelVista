@@ -8,6 +8,10 @@
 import Foundation
 
 class Service {
+    // Fonction qui permet de recupérer les données d'un fichier
+    // Et qui les transforme en données utilisables en Swift
+    // Ici nous l'utilisons uniquement pour notre fichier Source.json
+    // Elle retourne un tableau de type Region
     func load<T: Decodable>(_ filename: String) -> T {
         let data: Data
 

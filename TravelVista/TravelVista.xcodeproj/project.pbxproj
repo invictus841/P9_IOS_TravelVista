@@ -60,6 +60,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		424C31C92B30ABE600279238 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				424C31C32B30A72300279238 /* Model.swift */,
+				424C31C52B30A76900279238 /* Source.json */,
+				424C31C72B30A78B00279238 /* Service.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		42B90C062B2A055A00779364 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +89,7 @@
 		42B90C112B2A055B00779364 /* TravelVista */ = {
 			isa = PBXGroup;
 			children = (
+				424C31C92B30ABE600279238 /* Model */,
 				424C31BE2B30956400279238 /* Views */,
 				42B90C122B2A055B00779364 /* AppDelegate.swift */,
 				42B90C142B2A055B00779364 /* SceneDelegate.swift */,
@@ -86,9 +97,6 @@
 				42B90C1B2B2A056000779364 /* Assets.xcassets */,
 				42B90C1D2B2A056000779364 /* LaunchScreen.storyboard */,
 				42B90C202B2A056000779364 /* Info.plist */,
-				424C31C32B30A72300279238 /* Model.swift */,
-				424C31C52B30A76900279238 /* Source.json */,
-				424C31C72B30A78B00279238 /* Service.swift */,
 			);
 			path = TravelVista;
 			sourceTree = "<group>";

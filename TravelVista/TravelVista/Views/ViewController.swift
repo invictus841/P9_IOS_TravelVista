@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableview.delegate = self
     }
     
-    // Gestion des sections
+    // Gestion des sections - 2 fonctions
     func numberOfSections(in tableView: UITableView) -> Int {
         return regions.count
     }
@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return regions[section].name
     }
     
-    // Gestion des cellules
+    // Gestion des cellules - 3 fonctions
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return regions[section].countries.count
     }
@@ -48,8 +48,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // Fonction appelée lorsqu'une cellule est cliquée
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let senderCell = sender as? CustomCell,
+           let country = senderCell.country,
            let controller: DetailViewController = segue.destination as? DetailViewController {
-            controller.country = senderCell.country
+            controller.country = country
             
         }
     }

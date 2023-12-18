@@ -19,13 +19,24 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var rateView: UIView!
     
+    var country: Country?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.setCustomDesign()
-        self.setMapLocation(lat: 28.394857,
-                            long: 84.124008)
-        self.setRateStars(rate: 5)
+        if let country = country {
+            self.title = country.name
+            
+            self.countryNameLabel.text = country.name
+            self.capitalNameLabel.text = country.capital
+            self.imageView.image = UIImage(named: country.pictureName )
+            self.descriptionTextView.text = country.description
+            
+            self.setRateStars(rate: country.rate)
+            self.setMapLocation(lat: self.country?.coordinates.latitude ?? 28.394857,
+                                long: self.country?.coordinates.longitude ?? 84.124008)
+        }
     }
     
     private func setCustomDesign() {
@@ -63,7 +74,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     @IBAction func showMap(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let nextViewController: MapViewController = storyBoard.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
-        nextViewController.setUpData(capitalName: "Hanoi", lat: 28.394857, long: 84.124008)
+        nextViewController.setUpData(capitalName: self.country?.capital, lat: self.country?.coordinates.latitude ?? 28.394857, long: self.country?.coordinates.longitude ?? 84.124008)
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
 }

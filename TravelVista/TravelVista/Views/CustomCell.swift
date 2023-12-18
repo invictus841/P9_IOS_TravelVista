@@ -13,7 +13,15 @@ class CustomCell: UITableViewCell {
     @IBOutlet weak var countryImageView: UIImageView!
     @IBOutlet weak var countryNameLabel: UILabel!
     
-    func setUpCell(){
+    var country: Country?
+    
+    func setUpCell(country: Country){
         self.countryImageView.layer.cornerRadius = self.countryImageView.frame.size.width / 2
+        
+        self.country = country
+        self.countryNameLabel.text = country.name
+        self.capitalLabel.text = country.capital
+        self.countryImageView.image = UIImage(named: country.pictureName)
+        self.rateLabel.text = String(country.rate)
     }
 }

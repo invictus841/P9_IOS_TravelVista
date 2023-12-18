@@ -10,6 +10,9 @@
 		424C31BB2B30919400279238 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C31BA2B30919400279238 /* CustomCell.swift */; };
 		424C31BD2B30955E00279238 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C31BC2B30955E00279238 /* DetailViewController.swift */; };
 		424C31C02B30A39B00279238 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C31BF2B30A39B00279238 /* MapViewController.swift */; };
+		424C31C42B30A72300279238 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C31C32B30A72300279238 /* Model.swift */; };
+		424C31C62B30A76900279238 /* Source.json in Resources */ = {isa = PBXBuildFile; fileRef = 424C31C52B30A76900279238 /* Source.json */; };
+		424C31C82B30A78B00279238 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C31C72B30A78B00279238 /* Service.swift */; };
 		42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B90C122B2A055B00779364 /* AppDelegate.swift */; };
 		42B90C152B2A055B00779364 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B90C142B2A055B00779364 /* SceneDelegate.swift */; };
 		42B90C172B2A055B00779364 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B90C162B2A055B00779364 /* ViewController.swift */; };
@@ -22,6 +25,9 @@
 		424C31BA2B30919400279238 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		424C31BC2B30955E00279238 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		424C31BF2B30A39B00279238 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		424C31C32B30A72300279238 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		424C31C52B30A76900279238 /* Source.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Source.json; sourceTree = "<group>"; };
+		424C31C72B30A78B00279238 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		42B90C0F2B2A055B00779364 /* TravelVista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelVista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B90C122B2A055B00779364 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B90C142B2A055B00779364 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +86,9 @@
 				42B90C1B2B2A056000779364 /* Assets.xcassets */,
 				42B90C1D2B2A056000779364 /* LaunchScreen.storyboard */,
 				42B90C202B2A056000779364 /* Info.plist */,
+				424C31C32B30A72300279238 /* Model.swift */,
+				424C31C52B30A76900279238 /* Source.json */,
+				424C31C72B30A78B00279238 /* Service.swift */,
 			);
 			path = TravelVista;
 			sourceTree = "<group>";
@@ -142,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				424C31C62B30A76900279238 /* Source.json in Resources */,
 				42B90C1F2B2A056000779364 /* LaunchScreen.storyboard in Resources */,
 				42B90C1C2B2A056000779364 /* Assets.xcassets in Resources */,
 				42B90C1A2B2A055B00779364 /* Main.storyboard in Resources */,
@@ -155,6 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				424C31C42B30A72300279238 /* Model.swift in Sources */,
+				424C31C82B30A78B00279238 /* Service.swift in Sources */,
 				42B90C172B2A055B00779364 /* ViewController.swift in Sources */,
 				424C31C02B30A39B00279238 /* MapViewController.swift in Sources */,
 				42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */,

@@ -43,4 +43,11 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         self.mapView.setRegion(region, animated: true)
         self.mapView.delegate = self
     }
+    
+    @IBAction func showMap(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController: MapViewController = storyBoard.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
+        nextViewController.setUpData(capitalName: "Hanoi", lat: 28.394857, long: 84.124008)
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		424C31BB2B30919400279238 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C31BA2B30919400279238 /* CustomCell.swift */; };
 		424C31BD2B30955E00279238 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C31BC2B30955E00279238 /* DetailViewController.swift */; };
+		424C31C02B30A39B00279238 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C31BF2B30A39B00279238 /* MapViewController.swift */; };
 		42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B90C122B2A055B00779364 /* AppDelegate.swift */; };
 		42B90C152B2A055B00779364 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B90C142B2A055B00779364 /* SceneDelegate.swift */; };
 		42B90C172B2A055B00779364 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B90C162B2A055B00779364 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		424C31BA2B30919400279238 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		424C31BC2B30955E00279238 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		424C31BF2B30A39B00279238 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		42B90C0F2B2A055B00779364 /* TravelVista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelVista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B90C122B2A055B00779364 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B90C142B2A055B00779364 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 				424C31BC2B30955E00279238 /* DetailViewController.swift */,
 				42B90C162B2A055B00779364 /* ViewController.swift */,
 				424C31BA2B30919400279238 /* CustomCell.swift */,
+				424C31BF2B30A39B00279238 /* MapViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42B90C172B2A055B00779364 /* ViewController.swift in Sources */,
+				424C31C02B30A39B00279238 /* MapViewController.swift in Sources */,
 				42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */,
 				424C31BD2B30955E00279238 /* DetailViewController.swift in Sources */,
 				424C31BB2B30919400279238 /* CustomCell.swift in Sources */,

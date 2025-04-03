@@ -19,6 +19,8 @@
 		42B90C1C2B2A056000779364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1B2B2A056000779364 /* Assets.xcassets */; };
 		42B90C1F2B2A056000779364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1D2B2A056000779364 /* LaunchScreen.storyboard */; };
 		AC3376FE2D9E877A000F465F /* TitleViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3376FD2D9E877A000F465F /* TitleViewSwiftUI.swift */; };
+		AC3377002D9EC951000F465F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3376FF2D9EC951000F465F /* ListView.swift */; };
+		AC3377022D9EC966000F465F /* CustomCountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3377012D9EC966000F465F /* CustomCountryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		42B90C1E2B2A056000779364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42B90C202B2A056000779364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC3376FD2D9E877A000F465F /* TitleViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewSwiftUI.swift; sourceTree = "<group>"; };
+		AC3376FF2D9EC951000F465F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		AC3377012D9EC966000F465F /* CustomCountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCountryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				424C31BA2B30919400279238 /* CustomCell.swift */,
 				424C31BF2B30A39B00279238 /* MapViewController.swift */,
 				AC3376FD2D9E877A000F465F /* TitleViewSwiftUI.swift */,
+				AC3376FF2D9EC951000F465F /* ListView.swift */,
+				AC3377012D9EC966000F465F /* CustomCountryCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +187,8 @@
 				42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */,
 				424C31BD2B30955E00279238 /* DetailViewController.swift in Sources */,
 				424C31BB2B30919400279238 /* CustomCell.swift in Sources */,
+				AC3377002D9EC951000F465F /* ListView.swift in Sources */,
+				AC3377022D9EC966000F465F /* CustomCountryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

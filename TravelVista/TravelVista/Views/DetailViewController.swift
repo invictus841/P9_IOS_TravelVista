@@ -7,6 +7,7 @@
 
 import UIKit
 import MapKit
+import SwiftUI
 
 class DetailViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var countryNameLabel: UILabel!
@@ -28,6 +29,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
 
         if let country = self.country {
             self.setUpData(country: country)
+            self.addTitleSwiftUIView()
         }
     }
     
@@ -52,6 +54,33 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         self.mapView.layer.borderColor = UIColor(named: "CustomSand")?.cgColor
         self.mapView.layer.borderWidth = 2
     }
+    
+    private func addTitleSwiftUIView() {
+        guard let country = country else { return }
+
+        let swiftUIView = TitleViewSwiftUI(
+            countryName: country.name,
+            capitalName: country.capital,
+            rate: country.rate
+        )
+
+        let hostingController = UIHostingController(rootView: swiftUIView)
+
+        addChild(hostingController)
+
+        titleView.addSubview(hostingController.view)
+
+        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            hostingController.view.topAnchor.constraint(equalTo: titleView.topAnchor),
+            hostingController.view.bottomAnchor.constraint(equalTo: titleView.bottomAnchor),
+            hostingController.view.leadingAnchor.constraint(equalTo: titleView.leadingAnchor),
+            hostingController.view.trailingAnchor.constraint(equalTo: titleView.trailingAnchor)
+        ])
+
+        hostingController.didMove(toParent: self)
+    }
+
     
     private func setMapLocation(lat: Double, long: Double) {
         let initialLocation = CLLocationCoordinate2D(latitude: lat, longitude: long)

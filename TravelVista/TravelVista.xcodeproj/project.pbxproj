@@ -19,6 +19,7 @@
 		AC3376FE2D9E877A000F465F /* TitleViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3376FD2D9E877A000F465F /* TitleViewSwiftUI.swift */; };
 		AC3377002D9EC951000F465F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3376FF2D9EC951000F465F /* ListView.swift */; };
 		AC3377022D9EC966000F465F /* CustomCountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3377012D9EC966000F465F /* CustomCountryCell.swift */; };
+		AC5B87092D9FC51200ADC722 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B87082D9FC51200ADC722 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		AC3376FD2D9E877A000F465F /* TitleViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewSwiftUI.swift; sourceTree = "<group>"; };
 		AC3376FF2D9EC951000F465F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		AC3377012D9EC966000F465F /* CustomCountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCountryCell.swift; sourceTree = "<group>"; };
+		AC5B87082D9FC51200ADC722 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				AC3376FD2D9E877A000F465F /* TitleViewSwiftUI.swift */,
 				AC3376FF2D9EC951000F465F /* ListView.swift */,
 				AC3377012D9EC966000F465F /* CustomCountryCell.swift */,
+				AC5B87082D9FC51200ADC722 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				424C31C42B30A72300279238 /* Model.swift in Sources */,
+				AC5B87092D9FC51200ADC722 /* DetailView.swift in Sources */,
 				AC3376FE2D9E877A000F465F /* TitleViewSwiftUI.swift in Sources */,
 				424C31C82B30A78B00279238 /* Service.swift in Sources */,
 				424C31C02B30A39B00279238 /* MapViewController.swift in Sources */,

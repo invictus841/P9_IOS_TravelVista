@@ -8,30 +8,38 @@
 import SwiftUI
 
 struct CustomCountryCell: View {
+    let country: Country
+
     var body: some View {
         HStack(spacing: 16) {
-            Image(systemName: "globe")
+            Image(country.pictureName)
                 .resizable()
-                .frame(width: 40, height: 40)
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 48, height: 48)
                 .clipShape(Circle())
 
             VStack(alignment: .leading) {
-                Text("Toto")
+                Text(country.name)
                     .font(.headline)
-                Text("Lorem Ipsum")
+                    .foregroundColor(.blue)
+                Text(country.capital)
                     .font(.subheadline)
                     .foregroundColor(.gray)
             }
 
             Spacer()
 
-            Text("5⭐️")
-                .foregroundColor(.orange)
+            HStack(spacing: 4) {
+                Text("\(country.rate)")
+                Image(systemName: "star.fill")
+                    .foregroundColor(.orange)
+            }
         }
         .padding(.vertical, 8)
     }
 }
 
+
 #Preview {
-    CustomCountryCell()
+    CustomCountryCell(country: Country(name: "France", capital: "Paris", description: "Lorem", rate: 5, pictureName: "nz", coordinates: Coordinates(latitude: 1, longitude: 1)))
 }

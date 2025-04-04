@@ -40,6 +40,7 @@ struct CustomCountryCell: View {
 }
 
 
+
 #Preview {
     CustomCountryCell(country: Country(name: "France", capital: "Paris", description: "Lorem", rate: 5, pictureName: "nz", coordinates: Coordinates(latitude: 1, longitude: 1)))
 }

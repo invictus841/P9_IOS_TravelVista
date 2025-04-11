@@ -35,11 +35,11 @@ struct TitleView: View {
         }
         .padding()
         .background(Color.white)
-        .cornerRadius(10)
+//        .cornerRadius(10)
     }
 }
 
 
-#Preview {
+#Preview(traits: .sizeThatFitsLayout) {
     TitleView(countryName: "Vietnam", capitalName: "Hanoi", rate: 5)
 }

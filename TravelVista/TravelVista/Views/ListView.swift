@@ -27,44 +27,43 @@ struct ListView: View {
 }
 
 
-
 struct CountryRowSwiftUI: View {
     var country: Country
 
     var body: some View {
-        HStack {
-            Image(country.pictureName)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 45, height: 45)
-                .clipShape(Circle())
+        NavigationLink(destination: DetailView(country: country)) {
+            HStack {
+                Image(country.pictureName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 45, height: 45)
+                    .clipShape(Circle())
 
-            VStack(alignment: .leading, spacing: 2) {
-                Text(country.name)
-                    .font(.headline)
-                    .foregroundColor(.blue)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(country.name)
+                        .font(.headline)
+                        .foregroundColor(.blue)
 
-                Text(country.capital)
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
+                    Text(country.capital)
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
+
+                Spacer()
+
+                HStack(spacing: 2) {
+                    Text("\(country.rate)")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.orange)
+                }
             }
-
-            Spacer()
-
-            HStack(spacing: 2) {
-                Text("\(country.rate)")
-                    .font(.subheadline)
-                    .foregroundColor(.black)
-
-                Image(systemName: "star.fill")
-                    .foregroundColor(.orange)
-            }
+            .padding(.vertical, 6)
         }
-        .padding(.vertical, 6)
     }
 }
-
-
 
 
 #Preview {

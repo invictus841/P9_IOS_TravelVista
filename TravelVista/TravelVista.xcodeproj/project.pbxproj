@@ -17,6 +17,7 @@
 		42B90C1C2B2A056000779364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1B2B2A056000779364 /* Assets.xcassets */; };
 		42B90C1F2B2A056000779364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1D2B2A056000779364 /* LaunchScreen.storyboard */; };
 		AC27F07E2DA8C18C00121C2C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27F07D2DA8C18C00121C2C /* DetailView.swift */; };
+		AC27F0862DA8C5BE00121C2C /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27F0852DA8C5BE00121C2C /* CountryViewModel.swift */; };
 		AC6299D22DA843B400B7612E /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6299D12DA843B400B7612E /* TitleView.swift */; };
 		AC6299D42DA8BE2000B7612E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6299D32DA8BE2000B7612E /* ListView.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		42B90C1E2B2A056000779364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42B90C202B2A056000779364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC27F07D2DA8C18C00121C2C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		AC27F0852DA8C5BE00121C2C /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
 		AC6299D12DA843B400B7612E /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		AC6299D32DA8BE2000B7612E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 		42B90C112B2A055B00779364 /* TravelVista */ = {
 			isa = PBXGroup;
 			children = (
+				AC27F0832DA8C59D00121C2C /* ViewModel */,
 				424C31C92B30ABE600279238 /* Model */,
 				424C31BE2B30956400279238 /* Views */,
 				42B90C122B2A055B00779364 /* AppDelegate.swift */,
@@ -99,6 +102,14 @@
 				42B90C202B2A056000779364 /* Info.plist */,
 			);
 			path = TravelVista;
+			sourceTree = "<group>";
+		};
+		AC27F0832DA8C59D00121C2C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC27F0852DA8C5BE00121C2C /* CountryViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 				424C31C42B30A72300279238 /* Model.swift in Sources */,
 				AC27F07E2DA8C18C00121C2C /* DetailView.swift in Sources */,
 				424C31C82B30A78B00279238 /* Service.swift in Sources */,
+				AC27F0862DA8C5BE00121C2C /* CountryViewModel.swift in Sources */,
 				424C31C02B30A39B00279238 /* MapViewController.swift in Sources */,
 				42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */,
 				424C31BD2B30955E00279238 /* DetailViewController.swift in Sources */,

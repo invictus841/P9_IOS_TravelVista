@@ -120,9 +120,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VcK-BI-ev3"/>
-                    <connections>
-                        <outlet property="tableview" destination="kV7-91-AtI" id="Dpt-9R-Jax"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

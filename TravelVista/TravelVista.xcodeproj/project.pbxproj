@@ -16,6 +16,7 @@
 		42B90C1A2B2A055B00779364 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C182B2A055B00779364 /* Main.storyboard */; };
 		42B90C1C2B2A056000779364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1B2B2A056000779364 /* Assets.xcassets */; };
 		42B90C1F2B2A056000779364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1D2B2A056000779364 /* LaunchScreen.storyboard */; };
+		AC27F07E2DA8C18C00121C2C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27F07D2DA8C18C00121C2C /* DetailView.swift */; };
 		AC6299D22DA843B400B7612E /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6299D12DA843B400B7612E /* TitleView.swift */; };
 		AC6299D42DA8BE2000B7612E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6299D32DA8BE2000B7612E /* ListView.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		42B90C1B2B2A056000779364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42B90C1E2B2A056000779364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42B90C202B2A056000779364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC27F07D2DA8C18C00121C2C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		AC6299D12DA843B400B7612E /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		AC6299D32DA8BE2000B7612E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +56,7 @@
 				424C31BF2B30A39B00279238 /* MapViewController.swift */,
 				AC6299D12DA843B400B7612E /* TitleView.swift */,
 				AC6299D32DA8BE2000B7612E /* ListView.swift */,
+				AC27F07D2DA8C18C00121C2C /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				424C31C42B30A72300279238 /* Model.swift in Sources */,
+				AC27F07E2DA8C18C00121C2C /* DetailView.swift in Sources */,
 				424C31C82B30A78B00279238 /* Service.swift in Sources */,
 				424C31C02B30A39B00279238 /* MapViewController.swift in Sources */,
 				42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */,

@@ -22,7 +22,5 @@ struct DetailView: UIViewControllerRepresentable {
         return detailVC
     }
 
-    func updateUIViewController(_ uiViewController: DetailViewController, context: Context) {
-        // Nothing to update since data is static
-    }
+    func updateUIViewController(_ uiViewController: DetailViewController, context: Context) {}
 }

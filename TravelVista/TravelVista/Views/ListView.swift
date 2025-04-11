@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ListView: View {
-    var regions: [Region] = Service().load("Source.json")
+    @StateObject private var viewModel = CountryViewModel()
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(regions, id: \.name) { region in
+                ForEach(viewModel.regions, id: \.name) { region in
                     Section(header: Text(region.name)) {
                         ForEach(region.countries, id: \.name) { country in
                             CountryRowSwiftUI(country: country)
